@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+// Custom styling
+.is-horizontal-center {
+  justify-content: center;
+}
+
+.zoomable {
+  transition: transform 0.2s;
+}
+
+.zoomable:hover {
+  transform: scale(1.5);
+}
+
+// Bulma variables
+$primary: #cc0000;
+$family-sans-serif: "Nunito", sans-serif;
+$card-header-shadow: 0;
+$card-shadow: 0 0.1em 0.1em -0.1em $primary, 0 0px 0 1px $primary;
+$card-header-background-color: $primary !default;
+$card-header-color: #fff !default;
+
+@import "~bulma";
